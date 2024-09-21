@@ -204,10 +204,10 @@ function App() {
           />
         ))}
         <button
-          className={`playBtn absolute text-black bg-slate-300 size-16 sm:size-24 md:size-32 rounded-full border-[6px] sm:border-8 md:border-[12px] border-neutral-900 hover:scale-100 hover:bg-violet-500 hover:text-white ${
+          className={`playBtn absolute text-black bg-slate-300 size-16 sm:size-24 md:size-32 rounded-full border-[6px] sm:border-8 md:border-[12px] border-neutral-900 hover:scale-100 ${
             isStarted
               ? "text-2xl sm:text-3xl md:text-4xl hover:bg-slate-300 hover:text-black"
-              : "text-sm sm:text-xl md:text-2xl"
+              : "text-sm sm:text-xl md:text-2xl hover:bg-violet-500 hover:text-white"
           }`}
           onClick={handleStartGame}
           disabled={isStarted}
