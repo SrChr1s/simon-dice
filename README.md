@@ -15,6 +15,7 @@ Además de las funcionalidades básicas del juego, el proyecto incluye varias ca
 - **Vite**: Herramienta para la compilación y optimización del proyecto.
 - **react-icons**: Paquete usado para añadir iconos de manera rápida y sencilla.
 - **react-world-flags**: Utilizado para complementar la interfaz con iconos visuales adicionales.
+- **@raddix/use-count-down**: Paquete utilizado para el modo contrarreloj.
 
 ## Características Principales
 
@@ -75,4 +76,3 @@ Además de las funcionalidades básicas del juego, el proyecto incluye varias ca
 - **Tema Oscuro-Claro**: Implementación de un modo oscuro y claro.
 - **Sonidos**: Añadir efectos de sonido cuando los botones se presionan.
 - **Selección de Sonidos**: Opción para cambiar qué sonidos se reproducen al pulsar los botones.
-- **Modos Contrarreloj e Inverso**: Implementación de estos modos de juego.

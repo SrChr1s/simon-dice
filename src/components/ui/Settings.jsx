@@ -1,7 +1,7 @@
 import React from "react";
-import UIMenu from "./UIMenu";
+import Menu from "./Menu";
 
-export default function UISettings({
+export default function Settings({
   show,
   difficulty,
   handleEasy,
@@ -17,7 +17,7 @@ export default function UISettings({
   closeSettings,
 }) {
   return (
-    <UIMenu
+    <Menu
       show={show}
       mainClass={"settingsMenu"}
       content={
@@ -83,7 +83,6 @@ export default function UISettings({
                       : ""
                   }`}
                   onClick={contra}
-                  disabled
                 >
                   Contrarreloj
                 </button>
@@ -92,7 +91,6 @@ export default function UISettings({
                     gameMode == "inverso" ? "bg-sky-600/50 rounded-full" : ""
                   }`}
                   onClick={inverse}
-                  disabled
                 >
                   Inverso
                 </button>

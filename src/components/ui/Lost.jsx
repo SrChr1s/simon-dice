@@ -1,9 +1,9 @@
 import React from "react";
-import UIMenu from "./UIMenu";
+import Menu from "./Menu";
 
-export default function UILost({ show, handleLost }) {
+export default function Lost({ show, handleLost }) {
   return (
-    <UIMenu
+    <Menu
       show={show}
       mainClass={"lostMenu"}
       content={

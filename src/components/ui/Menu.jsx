@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function UIMenu({ show, mainClass, content }) {
+export default function Menu({ show, mainClass, content }) {
   return (
     <div
       className={`${
