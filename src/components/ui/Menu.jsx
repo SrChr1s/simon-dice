@@ -8,7 +8,7 @@ export default function Menu({ show, mainClass, content }) {
       } absolute h-screen w-screen flex justify-center items-center backdrop-blur-xl bg-sky-950/20 duration-500`}
     >
       <section
-        className={`${mainClass} size-fit p-8 rounded-3xl text-white  drop-shadow-[0_3px_5px_rgba(0,0,0,0.8)]`}
+        className={`${mainClass} size-fit p-8 sm:pt-0 rounded-3xl text-white  drop-shadow-[0_3px_5px_rgba(0,0,0,0.8)]`}
       >
         {content}
       </section>

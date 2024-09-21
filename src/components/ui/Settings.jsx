@@ -22,7 +22,7 @@ export default function Settings({
       mainClass={"settingsMenu"}
       content={
         <div className="settingsContent flex flex-col justify-center items-center">
-          <h2 className="text-2xl mb-8 sm:text-4xl sm:px-6 sm:py-4">
+          <h2 className="text-2xl mb-8 sm:text-4xl sm:px-6 sm:pb-4">
             Configuración
           </h2>
           <section className="md:flex md:justify-center md:items-center">
