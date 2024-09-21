@@ -1,49 +1,78 @@
-# Simon Dice - Juego en React
+# Juego Simón Dice
 
-![](assets/Screenshot_2.png)
+![](assets/banner.png)
 
-## Descripción
+## Descripción General
 
-Simon Dice es una aplicación interactiva basada en el clásico juego de Simon, donde el objetivo es seguir una secuencia de colores que se presenta de forma aleatoria. El juego incrementa la dificultad a medida que el jugador avanza, desafiando su memoria y capacidad de atención. Este proyecto está desarrollado utilizando **React**, **Vite**, **CSS** y **JSX**, y hace uso de hooks de React como `useState` y `useEffect` para gestionar el estado y los efectos secundarios.
+Esta es una versión digital del popular juego de memoria, donde 4 botones se iluminan en una secuencia aleatoria y el usuario debe replicar el orden de la secuencia. Este proyecto fue desarrollado en **React** con la ayuda de **TailwindCSS** para los estilos y **Vite** como herramienta de compilación. La sintaxis utilizada es JSX.
 
-## Características
+Además de las funcionalidades básicas del juego, el proyecto incluye varias características como diferentes niveles de dificultad y modos de juego, con futuras actualizaciones planificadas.
 
-- **Interfaz sencilla**: El juego está centralizado en la pantalla con una interfaz intuitiva y fácil de usar.
-- **Control de dificultad**: Un botón de ajustes en la esquina permite al usuario elegir entre tres niveles de dificultad: Fácil, Medio y Difícil.
-- **Uso de Hooks de React**: Implementación de `useState` y `useEffect` para el manejo del estado del juego y la actualización de la interfaz.
+## Tecnologías Utilizadas
 
-## Tecnologías
+- **React**: Utilizado para el desarrollo de la interfaz y la lógica del juego. Se implementaron hooks como `useState` y `useEffect` para manejar el estado y los efectos secundarios.
+- **TailwindCSS**: Para los estilos de los elementos, garantizando un diseño atractivo y responsive.
+- **Vite**: Herramienta para la compilación y optimización del proyecto.
+- **react-icons**: Paquete usado para añadir iconos de manera rápida y sencilla.
+- **react-world-flags**: Utilizado para complementar la interfaz con iconos visuales adicionales.
 
-- **React**: Biblioteca de JavaScript para construir interfaces de usuario.
-- **Vite**: Herramienta de construcción rápida para desarrollo y optimización de aplicaciones.
-- **CSS**: Estilizado de la interfaz del juego.
-- **JSX**: Sintaxis de JavaScript para describir la interfaz de usuario.
+## Características Principales
 
-## Instalación
+1. **Juego Clásico de Simón Dice**:
+   - Los botones se iluminan en una secuencia aleatoria.
+   - El jugador debe replicar la secuencia correctamente para avanzar.
+2. **Dificultades**:
 
-Para instalar y ejecutar este proyecto en tu máquina local, sigue estos pasos:
+   - **Fácil**: La secuencia es más corta y el tiempo de respuesta es mayor.
+   - **Normal**: Secuencias de longitud moderada con tiempo reducido.
+   - **Difícil**: Secuencias más largas y un tiempo de respuesta aún más corto.
 
-1. Clona el repositorio:
+3. **Modos de Juego**:
+
+   - **Clásico**: Modo tradicional del juego Simón Dice.
+   - **Contrarreloj**: Modo en desarrollo donde el jugador tiene tiempo limitado para completar la secuencia.
+   - **Inverso**: Modo en desarrollo donde el jugador debe replicar la secuencia en orden inverso.
+
+4. **Responsive Design**:
+   - El diseño es adaptable y funciona bien en dispositivos móviles, tabletas y pantallas de escritorio, ofreciendo una experiencia de usuario fluida en cualquier plataforma.
+
+## Hooks de React Utilizados
+
+- **useState**: Utilizado para manejar el estado del juego, como la secuencia generada, el turno del jugador y la dificultad seleccionada.
+- **useEffect**: Utilizado para ejecutar efectos secundarios como la generación de la secuencia aleatoria y la activación de los botones de luz.
+
+## Instalación y Ejecución
+
+1. Clona este repositorio:
 
    ```bash
-   git clone https://github.com/tu-usuario/simon-dice.git
+   git clone https://github.com/SrChr1s/simon-dice.git
+   ```
 
-2. Navega al directorio del proyecto:
+2. Accede al directorio del proyecto:
+
    ```bash
    cd simon-dice
-   
+   ```
+
 3. Instala las dependencias:
+
    ```bash
    npm install
-   
-4. Ejecuta el proyecto en modo desarrollo:
+   ```
+
+4. Inicia el proyecto en modo desarrollo:
+
    ```bash
    npm run dev
-   
-El juego estará disponible en http://localhost:5173 por defecto.
+   ```
 
-## Uso
+   La aplicación estará disponible en `http://localhost:3000`.
 
-1. **Jugar**: Sigue la secuencia de colores que se muestra en el juego. Cada vez que completes una secuencia correctamente, la secuencia se alargará.
-   
-2. **Ajustes**: Haz clic en el botón de ajustes en la esquina superior derecha para seleccionar el nivel de dificultad: Fácil, Medio o Difícil.
+## Lista de To-do para Próximas Actualizaciones
+
+- **Colores Personalizables**: Opción para cambiar el color de los botones.
+- **Tema Oscuro-Claro**: Implementación de un modo oscuro y claro.
+- **Sonidos**: Añadir efectos de sonido cuando los botones se presionan.
+- **Selección de Sonidos**: Opción para cambiar qué sonidos se reproducen al pulsar los botones.
+- **Modos Contrarreloj e Inverso**: Implementación de estos modos de juego.
