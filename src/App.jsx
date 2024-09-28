@@ -58,7 +58,9 @@ function App() {
 
   const handleStartGame = () => {
     setIsStarted(true);
-    actions.start();
+    if (gameMode === "contra") {
+      actions.start();
+    }
   };
 
   const handleLost = () => {
@@ -129,7 +131,9 @@ function App() {
         if (userTry.length) {
           setUserSecuence(userTry);
         } else {
-          actions.start(count + 2000);
+          if (gameMode === "contra") {
+            actions.start(count + 2000);
+          }
           await Timeout(300);
           setFlash("");
           setLevel(secuence.length);
@@ -165,12 +169,14 @@ function App() {
       await Timeout(d);
     }
     const tempSecuence = [...secuence];
-    if (gameMode == "inverso") {
+    if (gameMode === "inverso") {
       setUserSecuence(tempSecuence.reverse());
     } else {
       setUserSecuence(tempSecuence);
     }
-    actions.start();
+    if (gameMode === "contra") {
+      actions.start();
+    }
     setUserTurn(true);
   }
 
